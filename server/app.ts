@@ -1,12 +1,10 @@
-import express, { Express } from 'express';
+import express, { Express, Request, Response, NextFunction } from 'express';
 import morgan from 'morgan';
-import dotenv from 'dotenv';
-import recipeRouter from './routes/recipeRoutes';
 
-dotenv.config();
+import recipeRouter from './routes/recipeRoutes';
+import userRouter from './routes/userRoutes';
 
 const app: Express = express();
-const port = process.env.PORT;
 
 if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'));
@@ -14,8 +12,17 @@ if (process.env.NODE_ENV === 'development') {
 
 app.use(express.json());
 
-app.use('/api/v1/recipes', recipeRouter);
-
-app.listen(port, () => {
-  console.log(`App running on port ${port}`);
+app.use((req: Request, res: Response, next: NextFunction) => {
+  console.log('Hello from the middleware 👋');
+  next();
 });
+
+app.use((req: Request, res: Response, next: NextFunction) => {
+  req.requestTime = new Date().toISOString();
+  next();
+});
+
+app.use('/api/v1/recipes', recipeRouter);
+app.use('/api/v1/users', userRouter);
+
+export default app;
