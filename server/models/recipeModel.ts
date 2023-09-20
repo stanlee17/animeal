@@ -5,15 +5,19 @@ const recipeSchema = new mongoose.Schema({
     type: String,
     required: [true, 'A recipe must have a name'],
     unique: true,
+    trim: true,
   },
   series: {
     type: String,
     required: [true, 'A recipe must have an anime series source'],
-    unique: true,
   },
-  rating: {
+  ratingsAverage: {
     type: Number,
     default: 4.5,
+  },
+  ratingsQuantity: {
+    type: Number,
+    default: 0,
   },
   duration: {
     type: Number,
@@ -26,6 +30,23 @@ const recipeSchema = new mongoose.Schema({
   description: {
     type: String,
     required: [true, 'A recipe must have a description'],
+    trim: true,
+  },
+  imageCover: {
+    type: String,
+    required: [true, 'A tour must have a cover image'],
+  },
+  imageBackground: {
+    type: String,
+    required: [true, 'A recipe must have a image background'],
+  },
+  youtubeUrl: {
+    type: String,
+    default: null,
+  },
+  createdAt: {
+    type: Date,
+    default: Date.now(),
   },
 });
 
