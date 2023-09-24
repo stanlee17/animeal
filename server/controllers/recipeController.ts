@@ -3,8 +3,39 @@ import Recipe from './../models/recipeModel';
 
 export const getAllRecipes = async (req: Request, res: Response) => {
   try {
-    const recipes = await Recipe.find();
+    // BUILD QUERY
+    // 1) Filtering
+    const queryObj = { ...req.query };
+    const excludedFields = ['page', 'sort', 'limit', 'fields'];
+    excludedFields.forEach((el) => delete queryObj[el]);
 
+    // 2) Advanced filtering
+    let queryStr = JSON.stringify(queryObj);
+    queryStr = queryStr.replace(/\b(gte|gt|lte|lt)\b/g, (match) => `$${match}`);
+
+    let query: any = Recipe.find(JSON.parse(queryStr));
+
+    // 3) Sorting
+    const sort = req.query.sort as string;
+    if (sort) {
+      const sortBy = sort.split(',').join(' ');
+      query = query.sort(sortBy);
+    } else {
+      query = query.sort('-createdAt');
+    }
+
+    // 4) Field limiting
+    const fields = req.query.fields as string;
+    if (fields) {
+      const fieldsBy = fields.split(',').join(' ');
+      query = query.select(fieldsBy);
+    } else {
+      query = query.select('-__v');
+    }
+
+    const recipes = await query;
+
+    // SEND RESPONSE
     res.status(200).json({
       status: 'success',
       results: recipes.length,

@@ -1,0 +1,86 @@
+{
+  "title": "Fluffy Souffle Omelette",
+  "series": "Food Wars!: Shokugeki no Soma",
+  "imageCover": "recipe-1-cover.png",
+  "imageBackground": "recipe-2-background.png",
+  "cookingTime": 5,
+  "prepTime": 10,
+  "calories": 800,
+  "servings": 2,
+  "cuisine": "French",
+  "tags": ["French", "Food Wars", "Omelette", "Eggs", "Yukihira Souma"],
+  "difficulty": "Medium",
+  "description": "The Fluffy Soufflé Omelette, inspired by the captivating anime 'Food Wars!' (Shokugeki no Soma), is a culinary masterpiece that pushes the boundaries of traditional cooking. This iconic dish is a visual spectacle, known for its cloud-like texture and unforgettable taste. It's a true representation of gourmet artistry, where eggs are transformed into a fluffy, dreamlike omelette that melts in your mouth. In this recipe, you'll discover the secrets behind creating this enchanting dish—a process that involves precise egg separation, expert whisking, and the delicate art of folding. As the omelette puffs and swells in the skillet, it becomes a feast for the eyes and the palate. Join us on a culinary journey inspired by the anime world, where cooking transcends the ordinary, and every bite is an unforgettable experience. Get ready to embark on your own 'Food Wars!' adventure as you master the Fluffy Soufflé Omelette.",
+  "youtubeUrl": "",
+  "ingredients": [
+    {
+      "name": "Eggs",
+      "quantity": "2"
+    },
+    {
+      "name": "Butter",
+      "quantity": "15g"
+    },
+    {
+      "name": "Garlic (Diced)",
+      "quantity": "4 Cloves"
+    },
+    {
+      "name": "Tomato Paste",
+      "quantity": "5 tbsp"
+    },
+    {
+      "name": "Red Wine",
+      "quantity": "45 ml"
+    },
+    {
+      "name": "Pepper",
+      "quantity": "To Taste"
+    },
+    {
+      "name": "Salt",
+      "quantity": "To Taste"
+    },
+    {
+      "name": "Oil"
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "description": "Heat a tablespoon of oil in a pan and sauté the garlic."
+    },
+    {
+      "step": 2,
+      "description": "Once the garlic is fragrant, add tomato sauce and red wine."
+    },
+    {
+      "step": 3,
+      "description": "Simmer on medium heat for about 1 minute."
+    },
+    {
+      "step": 4,
+      "description": "Season with salt and pepper to taste."
+    },
+    {
+      "step": 5,
+      "description": "Crack 2 eggs into a bowl and thoroughly whip with electric mixer until thick enough that ripples remain on the surface, for about 5 minutes."
+    },
+    {
+      "step": 6,
+      "description": "Melt 1 tablespoon of butter in a frying pan and add the beaten egg."
+    },
+    {
+      "step": 7,
+      "description": "Cook on medium heat for about 1 – 2 minutes, and then turn off the heat, cover, and let steam for 1 – 2 minutes."
+    },
+    {
+      "step": 8,
+      "description": "Fold in half and plate."
+    },
+    {
+      "step": 9,
+      "description": "Pour tomato sauce over the soufflé omelette, and serve."
+    }
+  ]
+}

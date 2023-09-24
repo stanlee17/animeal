@@ -1,27 +1,70 @@
 import mongoose from 'mongoose';
 
-const recipeSchema = new mongoose.Schema({
+const ingredientSchema = new mongoose.Schema({
   name: {
     type: String,
-    required: [true, 'A recipe must have a name'],
+    required: [true, 'An ingredient must have a name'],
+  },
+  quantity: {
+    type: String,
+    default: null,
+  },
+});
+
+const instructionSchema = new mongoose.Schema({
+  step: Number,
+  description: {
+    type: String,
+    required: [true, 'An instruction must have a description'],
+  },
+});
+
+const recipeSchema = new mongoose.Schema({
+  title: {
+    type: String,
+    required: [true, 'A recipe must have a title'],
     unique: true,
     trim: true,
+  },
+  createdAt: {
+    type: Date,
+    default: Date.now(),
   },
   series: {
     type: String,
     required: [true, 'A recipe must have an anime series source'],
   },
-  ratingsAverage: {
-    type: Number,
-    default: 4.5,
+  imageCover: {
+    type: String,
+    required: [true, 'A tour must have a cover image'],
   },
-  ratingsQuantity: {
-    type: Number,
-    default: 0,
+  imageBackground: {
+    type: String,
+    required: [true, 'A recipe must have a image background'],
   },
-  duration: {
+  cookingTime: {
     type: Number,
-    required: [true, 'A recipe must have a time duration (mins)'],
+    required: [true, 'A recipe must have a cooking time'],
+  },
+  prepTime: {
+    type: Number,
+    required: [true, 'A recipe must have a preparation time'],
+  },
+  calories: {
+    type: Number,
+    required: [true, 'A recipe must have calories per serving'],
+  },
+  servings: {
+    type: Number,
+    required: [true, 'A recipe must have servings number'],
+  },
+  cuisine: {
+    type: String,
+    required: [true, 'A recipe must have a cuisine'],
+  },
+  tags: {
+    type: [String],
+    required: [true, 'A recipe must have tags'],
   },
   difficulty: {
     type: String,
@@ -32,21 +75,21 @@ const recipeSchema = new mongoose.Schema({
     required: [true, 'A recipe must have a description'],
     trim: true,
   },
-  imageCover: {
-    type: String,
-    required: [true, 'A tour must have a cover image'],
-  },
-  imageBackground: {
-    type: String,
-    required: [true, 'A recipe must have a image background'],
+  favourites: {
+    type: Number,
+    default: 0,
   },
   youtubeUrl: {
     type: String,
     default: null,
   },
-  createdAt: {
-    type: Date,
-    default: Date.now(),
+  ingredients: {
+    type: [ingredientSchema],
+    required: [true, 'A recipe must have ingredients'],
+  },
+  instructions: {
+    type: [instructionSchema],
+    required: [true, 'A recipe must have instructions'],
   },
 });
 
