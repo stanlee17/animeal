@@ -3,7 +3,6 @@ import Recipe from './../models/recipeModel';
 
 export const getAllRecipes = async (req: Request, res: Response) => {
   try {
-    // BUILD QUERY
     // 1) Filtering
     const queryObj = { ...req.query };
     const excludedFields = ['page', 'sort', 'limit', 'fields'];
@@ -13,7 +12,7 @@ export const getAllRecipes = async (req: Request, res: Response) => {
     let queryStr = JSON.stringify(queryObj);
     queryStr = queryStr.replace(/\b(gte|gt|lte|lt)\b/g, (match) => `$${match}`);
 
-    let query: any = Recipe.find(JSON.parse(queryStr));
+    let query = Recipe.find(JSON.parse(queryStr));
 
     // 3) Sorting
     const sort = req.query.sort as string;
@@ -31,6 +30,18 @@ export const getAllRecipes = async (req: Request, res: Response) => {
       query = query.select(fieldsBy);
     } else {
       query = query.select('-__v');
+    }
+
+    // 5) Pagination
+    const page = Number(req.query.page) * 1 || 1;
+    const limit = Number(req.query.limit) * 1 || 100;
+    const skip = (page - 1) * limit;
+
+    query = query.skip(skip).limit(limit);
+
+    if (req.query.page) {
+      const numRecipe = await Recipe.countDocuments();
+      if (skip >= numRecipe) throw new Error('This page does not exist');
     }
 
     const recipes = await query;

@@ -1,6 +1,37 @@
-import mongoose from 'mongoose';
+import mongoose, { Types } from 'mongoose';
 
-const ingredientSchema = new mongoose.Schema({
+interface Ingredient {
+  name: string;
+  quantity?: string;
+}
+
+interface Instruction {
+  step: number;
+  description: string;
+}
+
+interface Recipe {
+  _id: Types.ObjectId;
+  title: string;
+  createdAt: Date;
+  series: string;
+  imageCover: string;
+  imageBackground: string;
+  cookingTime: number;
+  prepTime: number;
+  calories: number;
+  servings: number;
+  cuisine: string;
+  tags: [String];
+  difficulty: string;
+  description: string;
+  favourites: number;
+  youtubeUrl: string;
+  ingredients: [Ingredient];
+  instructions: [Instruction];
+}
+
+const ingredientSchema = new mongoose.Schema<Ingredient>({
   name: {
     type: String,
     required: [true, 'An ingredient must have a name'],
@@ -11,7 +42,7 @@ const ingredientSchema = new mongoose.Schema({
   },
 });
 
-const instructionSchema = new mongoose.Schema({
+const instructionSchema = new mongoose.Schema<Instruction>({
   step: Number,
   description: {
     type: String,
@@ -19,7 +50,7 @@ const instructionSchema = new mongoose.Schema({
   },
 });
 
-const recipeSchema = new mongoose.Schema({
+const recipeSchema = new mongoose.Schema<Recipe>({
   title: {
     type: String,
     required: [true, 'A recipe must have a title'],

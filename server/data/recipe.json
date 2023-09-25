@@ -1,86 +1,459 @@
-{
-  "title": "Fluffy Souffle Omelette",
-  "series": "Food Wars!: Shokugeki no Soma",
-  "imageCover": "recipe-1-cover.png",
-  "imageBackground": "recipe-2-background.png",
-  "cookingTime": 5,
-  "prepTime": 10,
-  "calories": 800,
-  "servings": 2,
-  "cuisine": "French",
-  "tags": ["French", "Food Wars", "Omelette", "Eggs", "Yukihira Souma"],
-  "difficulty": "Medium",
-  "description": "The Fluffy Soufflé Omelette, inspired by the captivating anime 'Food Wars!' (Shokugeki no Soma), is a culinary masterpiece that pushes the boundaries of traditional cooking. This iconic dish is a visual spectacle, known for its cloud-like texture and unforgettable taste. It's a true representation of gourmet artistry, where eggs are transformed into a fluffy, dreamlike omelette that melts in your mouth. In this recipe, you'll discover the secrets behind creating this enchanting dish—a process that involves precise egg separation, expert whisking, and the delicate art of folding. As the omelette puffs and swells in the skillet, it becomes a feast for the eyes and the palate. Join us on a culinary journey inspired by the anime world, where cooking transcends the ordinary, and every bite is an unforgettable experience. Get ready to embark on your own 'Food Wars!' adventure as you master the Fluffy Soufflé Omelette.",
-  "youtubeUrl": "",
-  "ingredients": [
-    {
-      "name": "Eggs",
-      "quantity": "2"
-    },
-    {
-      "name": "Butter",
-      "quantity": "15g"
-    },
-    {
-      "name": "Garlic (Diced)",
-      "quantity": "4 Cloves"
-    },
-    {
-      "name": "Tomato Paste",
-      "quantity": "5 tbsp"
-    },
-    {
-      "name": "Red Wine",
-      "quantity": "45 ml"
-    },
-    {
-      "name": "Pepper",
-      "quantity": "To Taste"
-    },
-    {
-      "name": "Salt",
-      "quantity": "To Taste"
-    },
-    {
-      "name": "Oil"
-    }
-  ],
-  "instructions": [
-    {
-      "step": 1,
-      "description": "Heat a tablespoon of oil in a pan and sauté the garlic."
-    },
-    {
-      "step": 2,
-      "description": "Once the garlic is fragrant, add tomato sauce and red wine."
-    },
-    {
-      "step": 3,
-      "description": "Simmer on medium heat for about 1 minute."
-    },
-    {
-      "step": 4,
-      "description": "Season with salt and pepper to taste."
-    },
-    {
-      "step": 5,
-      "description": "Crack 2 eggs into a bowl and thoroughly whip with electric mixer until thick enough that ripples remain on the surface, for about 5 minutes."
-    },
-    {
-      "step": 6,
-      "description": "Melt 1 tablespoon of butter in a frying pan and add the beaten egg."
-    },
-    {
-      "step": 7,
-      "description": "Cook on medium heat for about 1 – 2 minutes, and then turn off the heat, cover, and let steam for 1 – 2 minutes."
-    },
-    {
-      "step": 8,
-      "description": "Fold in half and plate."
-    },
-    {
-      "step": 9,
-      "description": "Pour tomato sauce over the soufflé omelette, and serve."
-    }
-  ]
-}
+[
+  {
+    "title": "Fluffy Souffle Omelette",
+    "series": "Food Wars!: Shokugeki no Soma",
+    "imageCover": "recipe-1-cover.png",
+    "imageBackground": "recipe-2-background.png",
+    "cookingTime": 5,
+    "prepTime": 10,
+    "calories": 800,
+    "servings": 2,
+    "cuisine": "French",
+    "tags": ["French", "Food Wars", "Omelette", "Eggs", "Yukihira Souma"],
+    "difficulty": "Medium",
+    "description": "The Fluffy Soufflé Omelette, inspired by the captivating anime 'Food Wars!' (Shokugeki no Soma), is a culinary masterpiece that pushes the boundaries of traditional cooking. This iconic dish is a visual spectacle, known for its cloud-like texture and unforgettable taste. It's a true representation of gourmet artistry, where eggs are transformed into a fluffy, dreamlike omelette that melts in your mouth. In this recipe, you'll discover the secrets behind creating this enchanting dish—a process that involves precise egg separation, expert whisking, and the delicate art of folding. As the omelette puffs and swells in the skillet, it becomes a feast for the eyes and the palate. Join us on a culinary journey inspired by the anime world, where cooking transcends the ordinary, and every bite is an unforgettable experience. Get ready to embark on your own 'Food Wars!' adventure as you master the Fluffy Soufflé Omelette.",
+    "youtubeUrl": "",
+    "ingredients": [
+      {
+        "name": "Eggs",
+        "quantity": "2"
+      },
+      {
+        "name": "Butter",
+        "quantity": "15g"
+      },
+      {
+        "name": "Garlic (Diced)",
+        "quantity": "4 Cloves"
+      },
+      {
+        "name": "Tomato Paste",
+        "quantity": "5 tbsp"
+      },
+      {
+        "name": "Red Wine",
+        "quantity": "45 ml"
+      },
+      {
+        "name": "Pepper",
+        "quantity": "To Taste"
+      },
+      {
+        "name": "Salt",
+        "quantity": "To Taste"
+      },
+      {
+        "name": "Oil"
+      }
+    ],
+    "instructions": [
+      {
+        "step": 1,
+        "description": "Heat a tablespoon of oil in a pan and sauté the garlic."
+      },
+      {
+        "step": 2,
+        "description": "Once the garlic is fragrant, add tomato sauce and red wine."
+      },
+      {
+        "step": 3,
+        "description": "Simmer on medium heat for about 1 minute."
+      },
+      {
+        "step": 4,
+        "description": "Season with salt and pepper to taste."
+      },
+      {
+        "step": 5,
+        "description": "Crack 2 eggs into a bowl and thoroughly whip with electric mixer until thick enough that ripples remain on the surface, for about 5 minutes."
+      },
+      {
+        "step": 6,
+        "description": "Melt 1 tablespoon of butter in a frying pan and add the beaten egg."
+      },
+      {
+        "step": 7,
+        "description": "Cook on medium heat for about 1 – 2 minutes, and then turn off the heat, cover, and let steam for 1 – 2 minutes."
+      },
+      {
+        "step": 8,
+        "description": "Fold in half and plate."
+      },
+      {
+        "step": 9,
+        "description": "Pour tomato sauce over the soufflé omelette, and serve."
+      }
+    ]
+  },
+  {
+    "title": "Bacon and Eggs Breakfast",
+    "series": "Studio Ghibli",
+    "imageCover": "recipe-2-cover.png",
+    "imageBackground": "recipe-2-background.png",
+    "cookingTime": 5,
+    "prepTime": 5,
+    "calories": 600,
+    "servings": 2,
+    "cuisine": "American",
+    "tags": ["Studio Ghibli", "Bacon", "Eggs"],
+    "difficulty": "Easy",
+    "description": "Step into the enchanting world of 'Howl's Moving Castle' and start your day with a magical twist! Our 'Howl-Inspired Bacon and Eggs Breakfast' recipe takes the classic bacon and eggs combo and gives it a whimsical makeover. Imagine savoring crispy bacon paired with sunny-side-up eggs—a delightful blend of flavors and textures that captures the essence of Howl's fantastical universe. Join us in this enchanting culinary journey, where every bite brings a touch of magic to your morning. Whether you're a seasoned fan or new to the magic, this breakfast is a delightful adventure that'll leave you with a satisfied heart and a happy belly.",
+    "youtubeUrl": "8PEt0KYmLKA",
+    "ingredients": [
+      {
+        "name": "Bacon (Thick Cut)",
+        "quantity": "3 slices"
+      },
+      {
+        "name": "Eggs (Large)",
+        "quantity": "4"
+      },
+      {
+        "name": "Load Bread",
+        "quantity": "1"
+      },
+      {
+        "name": "Slab Cheese",
+        "quantity": "1"
+      }
+    ],
+    "instructions": [
+      {
+        "step": 1,
+        "description": "Heat a large pan over medium-high heat."
+      },
+      {
+        "step": 2,
+        "description": "Add 3 slices of bacon to the pan and cook until crispy. Push them to one side of the pan."
+      },
+      {
+        "step": 3,
+        "description": "Reduce the heat to medium. Crack 4 eggs directly into the pan next to the bacon. Cook until sunny side up eggs are to your preference."
+      },
+      {
+        "step": 4,
+        "description": "Remove the pan from the heat."
+      },
+      {
+        "step": 5,
+        "description": "Cut desired amount off from the loaf of bread."
+      },
+      {
+        "step": 6,
+        "description": "Serve the bacon, eggs, bread, and cheese family-style."
+      }
+    ]
+  },
+  {
+    "title": "Katsu Sandwich",
+    "series": "Charlotte",
+    "imageCover": "recipe-3-cover.png",
+    "imageBackground": "recipe-3-background.png",
+    "cookingTime": 15,
+    "prepTime": 15,
+    "calories": 1200,
+    "servings": 2,
+    "cuisine": "Japanese",
+    "tags": ["Panko", "Katsu", "Sandwich", "Charlotte"],
+    "difficulty": "Easy",
+    "description": "Introducing the 'Katsu Sandwich'—a delightful culinary creation inspired by the anime 'Charlotte.' Step into the world of extraordinary abilities and heartwarming connections with this mouthwatering sandwich. This recipe pays tribute to the anime's sense of adventure and friendship by bringing you a delicious blend of flavors and textures. In this recipe, you'll master the art of crafting a perfect Katsu Sandwich—a combination of crispy, breaded and fried meat (typically pork or chicken), fresh vegetables, and savory sauces, all embraced by soft slices of bread. It's a dish that's not only satisfying but also a delightful journey for your taste buds.",
+    "youtubeUrl": "IoLKxJfJEM0",
+    "ingredients": [
+      {
+        "name": "Sandwich Bread",
+        "quantity": "7 slices"
+      },
+      {
+        "name": "Tonkatsu Sauce"
+      },
+      {
+        "name": "Butter"
+      },
+      {
+        "name": "Mustard"
+      },
+      {
+        "name": "Chuck Eye Roll/Pork Loin",
+        "quantity": "2"
+      },
+      {
+        "name": "Salt and Pepper",
+        "quantity": "To Taste"
+      },
+      {
+        "name": "Flour",
+        "quantity": "2 tbsp"
+      },
+      {
+        "name": "Egg",
+        "quantity": "1/2 tbsp"
+      },
+      {
+        "name": "Panko/Breadcrumbs",
+        "quantity": "1 Cup"
+      },
+      {
+        "name": "Vegetable Oil",
+        "quantity": "1 Cup"
+      }
+    ],
+    "instructions": [
+      {
+        "step": 1,
+        "description": "Cut the crusts off the sandwich bread and cut into small pieces. Grind them in a blender to make bread crumbs. (You can also use store-bought panko!)"
+      },
+      {
+        "step": 2,
+        "description": "Place the panko in a bowl or bat."
+      },
+      {
+        "step": 3,
+        "description": "To prevent the pork from curling up, use a knife to cut the border between the fat and lean. **Be careful not to make a cut that goes all the way through. The flavor and fat is lost when frying."
+      },
+      {
+        "step": 4,
+        "description": "Using your fingers, massage the meat to soften it. If there are any hard parts, use a knife to cut the tendons."
+      },
+      {
+        "step": 5,
+        "description": "Season both sides with salt and pepper."
+      },
+      {
+        "step": 6,
+        "description": "Sift the flour and sprinkle it evenly on both sides and remove excess flour."
+      },
+      {
+        "step": 7,
+        "description": "Dip in beaten egg and then dredge in panko and press gently. It doesn't have to be fluffy because panko will pop up during deep frying."
+      },
+      {
+        "step": 8,
+        "description": "Heat oil in a deep pot or pan to 350ºF (180ºC) and place a piece of panko or wooden chopsticks in the oil. When small bubbles appear around them, it's ready to fry."
+      },
+      {
+        "step": 9,
+        "description": "Add in the pork. Fry for 3 minutes on each side or until crispy and golden brown. **If you over-fry it, the meat will lose its moisture and become less juicy and dry."
+      },
+      {
+        "step": 10,
+        "description": "Take out the pork and remove excess oil by holding it vertically for a few seconds. Place it on the wire rack and let it sit for 5 minutes."
+      },
+      {
+        "step": 11,
+        "description": "Spread butter on sandwich bread. You can spread mustard or toast if you like."
+      },
+      {
+        "step": 12,
+        "description": "After spreading a generous amount of tonkatsu sauce on one side of the cutlet, place it on a piece of bread with that side down."
+      },
+      {
+        "step": 13,
+        "description": "Spread a generous amount of tonkatsu sauce on the other side, then cover with bread."
+      },
+      {
+        "step": 14,
+        "description": "Wrap tightly in parchment paper or plastic wrap and set aside for 5 minutes and then cut in half."
+      }
+    ]
+  },
+  {
+    "title": "Ham Noodles",
+    "series": "Studio Ghibli (Ponyo)",
+    "imageCover": "recipe-4-cover.png",
+    "imageBackground": "recipe-4-background.png",
+    "cookingTime": 10,
+    "prepTime": 5,
+    "calories": 550,
+    "servings": 1,
+    "cuisine": "Japanese",
+    "tags": ["Ponyo", "Ramen", "Noodles", "Studio Ghibli"],
+    "difficulty": "Easy",
+    "description": "Embark on a culinary adventure straight from the enchanting world of 'Ponyo' with our 'Ham Noodles' recipe. This delightful dish is inspired by the heartwarming bond between Sosuke and Ponyo, capturing the magic and simplicity of their seaside adventures. In this recipe, you'll create a comforting bowl of noodles paired with tender slices of ham—a combination that's both comforting and delicious. Just like the magical transformations in the film, you'll witness the humble ingredients come together to create something truly delightful.",
+    "youtubeUrl": "qV1Mzw9Gir8",
+    "ingredients": [
+      {
+        "name": "Instant Noodles",
+        "quantity": "1 Packet"
+      },
+      {
+        "name": "Cooked Ham",
+        "quantity": "1 Slice"
+      },
+      {
+        "name": "Egg",
+        "quantity": "1"
+      },
+      {
+        "name": "Green Onion"
+      }
+    ],
+    "instructions": [
+      {
+        "step": 1,
+        "description": "Boil water and then transfer the boiling water into a saucepan. Add the egg and add more boiling water until the egg is fully submerged. Cover the saucepan with a lid and wait for about 8 minutes. Proceed to Step 5 in the meantime."
+      },
+      {
+        "step": 2,
+        "description": "Cover the saucepan with a lid and wait for about 8 minutes. Proceed to Step 4 in the meantime."
+      },
+      {
+        "step": 3,
+        "description": "After 8 minutes, retrieve the hard-boiled egg, cut it into half, and set aside."
+      },
+      {
+        "step": 4,
+        "description": "Chop green onion into bits."
+      },
+      {
+        "step": 5,
+        "description": "Slice the ham into halves. Put both ingredients aside."
+      },
+      {
+        "step": 6,
+        "description": "Add instant noodles in a bowl. Pour boiling water over the noodles and cover with a lid. Set aside for 3 minutes."
+      },
+      {
+        "step": 7,
+        "description": "After the first minute, separate the noodles and add in ham, hard-boiled egg and green onion. Cover the ramen bowl with a lid again."
+      },
+      {
+        "step": 8,
+        "description": "Wait for 2 more minutes and the dish is ready."
+      }
+    ]
+  },
+  {
+    "title": "Katsudon",
+    "series": "My Hero Academia",
+    "imageCover": "recipe-5-cover.png",
+    "imageBackground": "recipe-5-background.png",
+    "cookingTime": 15,
+    "prepTime": 5,
+    "calories": 700,
+    "servings": 1,
+    "cuisine": "Japanese",
+    "tags": ["Katsudon", "Cutlet", "My Hero Academia"],
+    "difficulty": "Medium",
+    "description": "Step into the heroic world of 'Boku no Hero Academia' with our delectable 'Katsudon' recipe—a dish that holds a special place in the heart of Izuku Midoriya, the aspiring hero. This flavorful and hearty meal mirrors the determination and spirit of the students at U.A. High School. In this recipe, you'll embark on a culinary adventure by crafting the perfect Katsudon. It features crispy, golden-brown pork cutlets (tonkatsu) that are tender on the inside, accompanied by a mouthwatering sauce that strikes a balance between savory and slightly sweet. All of this goodness is generously ladled over a bed of steaming, fluffy rice. The result is a symphony of flavors and textures that will not only satisfy your hunger but also awaken the hero within.",
+    "youtubeUrl": "veiBTv5zagg",
+    "ingredients": [
+      {
+        "name": "Pork Loin",
+        "quantity": "1"
+      },
+      {
+        "name": "Salt and Pepper",
+        "quantity": "To Taste"
+      },
+      {
+        "name": "Flour",
+        "quantity": "1 tbsp"
+      },
+      {
+        "name": "Egg (Beaten)",
+        "quantity": "1/4"
+      },
+      {
+        "name": "Panko/Breadcrumbs",
+        "quantity": "1/2 Cups"
+      },
+      {
+        "name": "Oil",
+        "quantity": "1 Cup"
+      },
+      {
+        "name": "Dashi Broth",
+        "quantity": "50 ml"
+      },
+      {
+        "name": "Soy Sauce",
+        "quantity": "1 tbsp"
+      },
+      {
+        "name": "Mirin",
+        "quantity": "1 tbsp"
+      },
+      {
+        "name": "Sugar",
+        "quantity": "1 tsp"
+      },
+      {
+        "name": "Medium Onion",
+        "quantity": "1/4"
+      },
+      {
+        "name": "Egg",
+        "quantity": "2"
+      },
+      {
+        "name": "Cooked Rice",
+        "quantity": "1 Bowl"
+      },
+      {
+        "name": "Mitsuba Leaf/Spring Onion/Parsley"
+      }
+    ],
+    "instructions": [
+      {
+        "step": 1,
+        "description": "From the list of ingredients, you can jump to a link on how to make dashi broth, so please refer to it. You can also use a dashi packet or granulated dashi to make dashi broth."
+      },
+      {
+        "step": 2,
+        "description": "In a small saucepan, bring the dashi broth, soy sauce, mirin, and sugar to a light boil"
+      },
+      {
+        "step": 3,
+        "description": "Cut the onion into wedges and beat the eggs in a bowl."
+      },
+      {
+        "step": 4,
+        "description": "To prevent the pork from curling up, use a knife to cut the border between the fat and lean. **Be careful not to make a cut that goes all the way through, or the flavor and oil of the meat will be lost."
+      },
+      {
+        "step": 5,
+        "description": "Using your fingers, massage the meat to soften it. If there are any hard parts, use a knife to cut the tendons."
+      },
+      {
+        "step": 6,
+        "description": "Season both sides with salt and pepper and sift the flour and sprinkle it evenly on both sides and remove excess flour."
+      },
+      {
+        "step": 7,
+        "description": "Dip in beaten egg."
+      },
+      {
+        "step": 8,
+        "description": "Dredge in panko and press gently. It doesn't have to be fluffy because panko will pop up during deep frying."
+      },
+      {
+        "step": 9,
+        "description": "Heat oil in a deep pot or pan to 350ºF (180ºC) and then place a piece of panko or wooden chopsticks in the oil. When small bubbles appear around them, it's ready to fry. Add in the pork. Fry for 3 minutes on each side or until crispy and golden brown. **If you over-fry it, the meat will lose its moisture and become less juicy and dry."
+      },
+      {
+        "step": 10,
+        "description": "Take out the pork and remove excess oil by holding it vertically for a few seconds. Place it on the wire rack or paper towel and let it sit for 5 minutes."
+      },
+      {
+        "step": 11,
+        "description": "Cut the pork cutlet into 4-5 pieces by pressing the knife straight down instead of moving it back and forth."
+      },
+      {
+        "step": 12,
+        "description": "Serve the cooked rice in a donburi bowl."
+      },
+      {
+        "step": 13,
+        "description": "In a small frying pan (a frying pan for katsudon or oyakodon is recommended), add the broth that you have already made and onions and place over low heat. **Cover the frying pan with a lid if it's possible (so the broth does not evaporate too quickly)."
+      },
+      {
+        "step": 14,
+        "description": "When the onions are cooked, pour in the beaten egg all over. Stir lightly."
+      },
+      {
+        "step": 15,
+        "description": "Place the egg mixture on top of the rice when the egg is half-cooked and then place the cutlet over egg mixture and garnish with mitsuba-leaf or parsley as your choice."
+      }
+    ]
+  }
+]
